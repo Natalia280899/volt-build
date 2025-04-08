@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<widget
+    xmlns="http://www.w3.org/ns/widgets"
+    id="com.nsbasic.HelloWorld"
+    version="1.0.1"
+    android-versionCode="2"
+    ios-CFBundleVersion="1.0.1"
+>
+    <!-- App information -->
+    <name>Local Notification with React</name>
+    <description>Local Notification plugin</description>
+    <!-- something for consider  -->
+    <author email="support@voltbuilder.com" href="http://voltbuilder.com"></author> 
+
+    <!-- General -->
+    <allow-navigation href="*"/>
+    <access origin="*"/>
+    <allow-intent href="*" />
+
+    <preference name="orientation" value="portrait"/>
+
+    <!-- iOS -->
+    <platform name="ios">
+        <preference name="deployment-target" value="11.0"/>
+        <preference name="target-device" value="universal"/>
+        <preference name="prerendered-icon" value="false"/>
+        <preference name="EnableViewportScale" value="false"/>
+        <preference name="detect-data-types" value="true"/>
+        <preference name="exit-on-suspend" value="false"/>
+        <preference name="AllowInlineMediaPlayback" value="true"/>
+        <preference name="DisallowOverscroll" value="true"/>
+
+    </platform>
+
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+
+    
+    <platform name="android">
+        <preference name="android-installLocation" value="auto"/>
+        <preference name="AndroidXEnabled" value="true"/> 
+        <preference name="AndroidWindowSplashScreenIconBackgroundColor" value="#3c82f6" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#3c82f6" />
+        <preference name="AutoHideSplashScreen" value="true" />
+
+    </platform>
+
+    <plugin name="cordova-plugin-statusbar" source="npm" />
+        <preference name="StatusBarOverlaysWebView" value="false"/>
+        <preference name="StatusBarBackgroundColor" value="#ffffff"/>
+        <preference name="StatusBarStyle" value="default"/>
+
+    <plugin name="cordova-plugin-device" source="npm" />
+    <plugin name="cordova-plugin-contacts" source="npm" />
+    <plugin name="cordova-plugin-camera" source="npm" />
+    <plugin name="cordova-plugin-geolocation" source="npm" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <plugin name="cordova-plugin-local-notification" source="npm" />
+    <plugin name="cordova-plugin-dialogs" source="npm" />
+        
+</widget>
